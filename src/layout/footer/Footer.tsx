@@ -1,12 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Icon } from '../../components/icon/Icon'
+import { FlexWrapper } from '../../components/FlexWrapper'
 
 
 export const Footer = ()=>{
 return(
 <StyletFooter>
-<CopyRight>2022 Relume. All right reserved.</CopyRight>
+      <FlexWrapper >
+      <CopyRight>2022 Relume. All right reserved.</CopyRight>
 
 
 <SocialList>
@@ -32,6 +34,8 @@ return(
     </SocialItem>
   
 </SocialList>
+      </FlexWrapper>
+
 </StyletFooter>
 )
 
@@ -39,10 +43,12 @@ return(
 
 
 const StyletFooter =styled.footer`
-    
+    display: flex;
+   
 `
 const SocialList =styled.ul`
-    
+    display: flex;
+    justify-content:flex-end
 `
 const SocialItem =styled.li`
     
@@ -52,5 +58,6 @@ const SocialLink = styled.a`
 `
 
 const CopyRight =styled.small`
-    
+    display: flex;
+    justify-content:flex-start
 `
