@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { theme } from "./Treme";
 
 export const GlobalStyle = createGlobalStyle`
 *,*::before,
@@ -25,12 +26,25 @@ a{
 
 
 ul{
-    list-style-type: style none;;
+    list-style-type: none;
 }
 
-buttom{
+button{
     background-color:unset;
     border:none
 }
 
+
+/* section:nth-of-type(o){
+  background-color:${theme.color.secondaryBg};
+  color:${theme.color.accent};
+}
+
+
+section:nth-of-type(even){
+  background-color:${theme.color.primaryBg};
+  color:${theme.color.font};
+} */
+
 `
+

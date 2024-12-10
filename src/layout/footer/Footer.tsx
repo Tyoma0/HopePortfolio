@@ -44,6 +44,7 @@ return(
 
 const StyletFooter =styled.footer`
     display: flex;
+    background-color:#ffff;
    
 `
 const SocialList =styled.ul`
