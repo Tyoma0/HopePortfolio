@@ -14,16 +14,38 @@ export const GlobalStyle = createGlobalStyle`
 
 body {
   margin: 0;
-  font-family:"Epilogue",  'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family:"Epilogue",   'Roboto', 
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+header nav{
+height:48px;
+display: flex;
+align-items:center
+}
 a{
     text-decoration:none;
+    color:#2D2C2C;
+    font-size:16px;
+}
+header a:last-child{
+  color:#ffffff;
+  padding:8px 20px;
 }
 
+
+header li:last-child{
+  background-color:#2D2C2C;
+ border-radius:4px;
+ transition: transform 0.5s ease-in-out;
+
+}
+header li:last-child:hover{
+  transform:scale(1.1);
+  
+}
 
 ul{
     list-style-type: none;
@@ -35,16 +57,17 @@ button{
 }
 
 
-/* section:nth-of-type(o){
-  background-color:${theme.color.secondaryBg};
-  color:${theme.color.accent};
+section:nth-of-type(odd){
+  background-color:${theme.color.primaryBg};
+  color:${theme.color.font};
+  
 }
 
 
 section:nth-of-type(even){
-  background-color:${theme.color.primaryBg};
-  color:${theme.color.font};
-} */
+  background-color:${theme.color.secondaryBg};
+  color:${theme.color.accent};
+}
 
 `
 

@@ -11,10 +11,10 @@ text:string
 export const Work = (props:WorkPropsType) => {
     return (
         <StyledWork>
+                
                 <Title>{props.title}</Title>
                 <Text>{props.text}</Text>
                 <Link></Link>
-                
                 
 
         </StyledWork>
