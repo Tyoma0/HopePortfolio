@@ -32,7 +32,7 @@ transform:rotate(-7.56deg)
 
 
 const  Photo= styled.img`
-width:200px;
-height:200px;
+width:100px;
+height:100px;
 transform:rotate(7.56deg)
 `
