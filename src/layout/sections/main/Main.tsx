@@ -8,10 +8,10 @@ import { FlexWrapper } from '../../../components/FlexWrapper';
     return (
         <StyledMain>          
             <FlexWrapper align='center' justify='space-around'>
-          <div>
+            <Me>
             <span>HELLO I’M Tyoma</span>
             <h1>A Frontend Developer</h1>
-            </div>  
+            </Me>  
             <Kub></Kub>
             <Photo src={photo} alt="" />
           </FlexWrapper>
@@ -19,20 +19,33 @@ import { FlexWrapper } from '../../../components/FlexWrapper';
     );
 };
 
+
+const Me = styled.div`
+position:relative;
+right:250px
+`
+
 const StyledMain  = styled.div`
     min-height:100vh;
-    background-color:#FFFFFF
+    background-color:#FFFFFF;
+    position: relative;
+    display: flex;
+    justify-content:space-evenly
 `
 const Kub = styled.div`
-width:200px;
-height:200px;
+width:570px;
+height:570px;
 background-color:#E7E7E7;
-transform:rotate(-7.56deg)
+transform:rotate(-7.56deg);
+position:absolute;
+right:50px
 `
 
 
 const  Photo= styled.img`
-width:100px;
-height:100px;
-transform:rotate(7.56deg)
+width:570px;
+height:570px;
+transform:rotate(7.56deg);
+position:absolute;
+right:50px
 `
