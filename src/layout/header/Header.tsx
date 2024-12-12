@@ -24,8 +24,7 @@ const  items = ['Projects','About','Digital Assets','Let’s Talk']
 };
 
 const StyledHeader = styled.header`
-    background-color:#FFFFFF;
-    background:#ffffff44;
+background:#00000044;
 padding:20px 0;
 position:fixed;
 top:0;

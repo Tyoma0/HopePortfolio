@@ -38,7 +38,7 @@ header a:last-child{
 
 header li:last-child{
   background-color:#2D2C2C;
- border-radius:4px;
+ border-radius:2px;
  transition: transform 0.5s ease-in-out;
 
 }
